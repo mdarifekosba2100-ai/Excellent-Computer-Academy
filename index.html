@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>এক্সিলেন্ট কম্পিউটার একাডেমী - Excellent Computer Academy</title>
+    <meta name="description" content="শেরপুরে মানসম্মত কম্পিউটার অফিস অ্যাপ্লিকেশন কোর্স প্রশিক্ষণ কেন্দ্র।">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Hind+Siliguri:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Hind Siliguri', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0b1329 0%, #172a45 50%, #0b1329 100%);
+            min-height: 100vh;
+            color: #1e293b;
+        }
+
+        .arabic-font {
+            font-family: 'Amiri', serif;
+        }
+
+        /* Continuous marquee animation: Left to Right */
+        @keyframes scrollLTR {
+            0% { transform: translateX(-50%); }
+            100% { transform: translateX(0%); }
+        }
+
+        /* Continuous marquee animation: Right to Left */
+        @keyframes scrollRTL {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-50%); }
+        }
+
+        /* Dynamic multi-color animations for glowing neon text */
+        @keyframes dynamicColorShift1 {
+            0%, 100% { color: #ff0055; text-shadow: 0 0 12px rgba(255, 0, 85, 0.8); }
+            25% { color: #ffe600; text-shadow: 0 0 12px rgba(255, 230, 0, 0.8); }
+            50% { color: #00ffcc; text-shadow: 0 0 12px rgba(0, 255, 204, 0.8); }
+            75% { color: #e056fd; text-shadow: 0 0 12px rgba(224, 86, 253, 0.8); }
+        }
+
+        @keyframes dynamicColorShift2 {
+            0%, 100% { color: #00f2fe; text-shadow: 0 0 12px rgba(0, 242, 254, 0.8); }
+            33% { color: #ff0844; text-shadow: 0 0 12px rgba(255, 8, 68, 0.8); }
+            66% { color: #76ff03; text-shadow: 0 0 12px rgba(118, 255, 3, 0.8); }
+        }
+
+        @keyframes dynamicColorShift3 {
+            0%, 100% { color: #f39c12; text-shadow: 0 0 15px rgba(243, 156, 18, 0.8); }
+            50% { color: #ff007f; text-shadow: 0 0 15px rgba(255, 0, 127, 0.8); }
+        }
+
+        @keyframes bgGradientMove {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .marquee-container-ltr {
+            display: flex;
+            width: 200%;
+            animation: scrollLTR 12s linear infinite;
+            will-change: transform;
+        }
+
+        .marquee-container-rtl {
+            display: flex;
+            width: 200%;
+            animation: scrollRTL 12s linear infinite;
+            will-change: transform;
+        }
+
+        .color-style-1 { animation: dynamicColorShift1 3s infinite ease-in-out; }
+        .color-style-2 { animation: dynamicColorShift2 2.5s infinite ease-in-out; }
+        .color-style-3 { animation: dynamicColorShift3 2s infinite ease-in-out; }
+
+        .banner-bg-1 {
+            background: linear-gradient(-45deg, #1f0036, #411d73, #004d40, #00897b);
+            background-size: 300% 300%;
+            animation: bgGradientMove 6s ease infinite;
+        }
+
+        .banner-bg-2 {
+            background: linear-gradient(-45deg, #0d1b2a, #1b263b, #415a77, #778da9);
+            background-size: 300% 300%;
+            animation: bgGradientMove 5s ease infinite;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center p-3 sm:p-6">
+
+    <div class="max-w-2xl w-full bg-white rounded-3xl shadow-2xl overflow-hidden border border-slate-700/30 my-4">
+        
+        <!-- বিসমিল্লাহির রাহমানির রাহীম ক্যালিগ্রাফিক বক্স -->
+        <header class="bg-gradient-to-r from-teal-950 via-emerald-900 to-slate-950 text-amber-300 text-center py-6 px-4 border-b-4 border-amber-400 relative overflow-hidden shadow-md">
+            <div class="absolute -top-10 -left-10 w-32 h-32 bg-amber-400/10 rounded-full blur-2xl pointer-events-none"></div>
+            <div class="absolute -bottom-10 -right-10 w-32 h-32 bg-emerald-400/10 rounded-full blur-2xl pointer-events-none"></div>
+            
+            <p class="arabic-font text-3xl sm:text-4xl tracking-wide mb-1 drop-shadow-md">
+                بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ
+            </p>
+            <p class="text-lg sm:text-xl font-bold text-white tracking-wider">
+                বিসমিল্লাহির রাহমানির রাহীম
+            </p>
+        </header>
+
+        <main class="p-5 sm:p-8 text-center bg-slate-50">
+            
+            <!-- প্রতিষ্ঠানের নাম -->
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-teal-900 mb-1 tracking-tight">
+                এক্সিলেন্ট কম্পিউটার একাডেমী
+            </h1>
+            <h2 class="text-lg sm:text-xl font-bold text-amber-600 tracking-wider uppercase mb-5">
+                Excellent Computer Academy
+            </h2>
+
+            <div class="w-3/4 h-1 bg-gradient-to-r from-transparent via-teal-700 to-transparent mx-auto mb-6"></div>
+
+            <!-- প্রোপ্রাইটর -->
+            <div class="inline-block bg-teal-50 border-2 border-dashed border-teal-700 rounded-full px-6 py-2.5 mb-4 shadow-sm">
+                <p class="text-lg sm:text-xl font-bold text-slate-800">
+                    প্রোপ্রাইটর: <span class="text-teal-900">মোঃ আরিফুল ইসলাম (বাবুল)</span>
+                </p>
+            </div>
+
+            <!-- ঠিকানা -->
+            <p class="text-base sm:text-lg text-slate-700 mb-6 font-medium">
+                📍 <span class="font-bold text-slate-900">ঠিকানা:</span> কসবা মোল্লাপাড়া, শেরপুর টাউন, শেরপুর - ২১০০
+            </p>
+
+            <!-- যোগাযোগ বাটন -->
+            <a href="tel:01821277140" class="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-teal-800 to-emerald-800 hover:from-teal-900 hover:to-emerald-900 text-white font-bold text-lg sm:text-xl px-8 py-3.5 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5 border border-emerald-500/30 active:scale-95 mb-8">
+                <span>📞</span>
+                <span>যোগাযোগ করুন: ০১৮২১-২৭৭১৪০</span>
+            </a>
+
+            <!-- কোর্স তথ্য বক্স -->
+            <section class="bg-white border border-teal-200 rounded-2xl p-5 sm:p-6 shadow-sm mb-8 text-left">
+                <div class="text-center mb-5">
+                    <span class="inline-block bg-emerald-100 text-emerald-900 font-bold text-base sm:text-lg px-4 py-1.5 rounded-lg border border-emerald-300 shadow-sm">
+                        🎓 এখানে অভিজ্ঞ শিক্ষক দ্বারা অফিস অ্যাপ্লিকেশন শেখানো হয়।
+                    </span>
+                </div>
+
+                <!-- কোর্সসমূহের তালিকা -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-5">
+                    <div class="flex items-center gap-2 bg-slate-50 border border-slate-200 p-3 rounded-xl shadow-xs hover:border-teal-400 transition-colors">
+                        <span class="text-emerald-600 font-extrabold">✔</span>
+                        <span class="text-slate-800 font-bold text-base sm:text-lg">এম. এস. ওয়ার্ড (MS Word)</span>
+                    </div>
+                    <div class="flex items-center gap-2 bg-slate-50 border border-slate-200 p-3 rounded-xl shadow-xs hover:border-teal-400 transition-colors">
+                        <span class="text-emerald-600 font-extrabold">✔</span>
+                        <span class="text-slate-800 font-bold text-base sm:text-lg">এম. এস. এক্সেল (MS Excel)</span>
+                    </div>
+                    <div class="flex items-center gap-2 bg-slate-50 border border-slate-200 p-3 rounded-xl shadow-xs hover:border-teal-400 transition-colors">
+                        <span class="text-emerald-600 font-extrabold">✔</span>
+                        <span class="text-slate-800 font-bold text-base sm:text-lg">এম. এস. পাওয়ার পয়েন্ট</span>
+                    </div>
+                    <div class="flex items-center gap-2 bg-slate-50 border border-slate-200 p-3 rounded-xl shadow-xs hover:border-teal-400 transition-colors">
+                        <span class="text-emerald-600 font-extrabold">✔</span>
+                        <span class="text-slate-800 font-bold text-base sm:text-lg">এম. এস. এক্সেস (MS Access)</span>
+                    </div>
+                </div>
+
+                <div class="bg-amber-50 border-l-4 border-amber-500 p-3.5 rounded-r-xl text-center">
+                    <p class="text-amber-900 font-bold text-base sm:text-lg">
+                        💼 অফিশিয়াল কাজের জন্য উপযোগী করে প্রশিক্ষণ দেওয়া হয়।
+                    </p>
+                </div>
+            </section>
+
+            <!-- "ভর্তি চলিতেছে" অ্যানিমেটেড ব্যানারসমূহ -->
+            <div class="space-y-4">
+                
+                <!-- ব্যানার ১: বাম থেকে ডানে স্লাইড -->
+                <div class="banner-bg-1 rounded-2xl p-3.5 overflow-hidden shadow-lg border border-white/20">
+                    <div class="marquee-container-ltr">
+                        <div class="flex justify-around w-1/2 shrink-0">
+                            <span class="text-2xl sm:text-3xl font-black color-style-1 px-3">" ভর্তি চলিতেছে "</span>
+                            <span class="text-2xl sm:text-3xl font-black color-style-2 px-3">" ভর্তি চলিতেছে "</span>
+                            <span class="text-2xl sm:text-3xl font-black color-style-3 px-3">" ভর্তি চলিতেছে "</span>
+                        </div>
+                        <div class="flex justify-around w-1/2 shrink-0">
+                            <span class="text-2xl sm:text-3xl font-black color-style-1 px-3">" ভর্তি চলিতেছে "</span>
+                            <span class="text-2xl sm:text-3xl font-black color-style-2 px-3">" ভর্তি চলিতেছে "</span>
+                            <span class="text-2xl sm:text-3xl font-black color-style-3 px-3">" ভর্তি চলিতেছে "</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ব্যানার ২: ডান থেকে বামে স্লাইড -->
+                <div class="banner-bg-2 rounded-2xl p-3.5 overflow-hidden shadow-lg border border-white/20">
+                    <div class="marquee-container-rtl">
+                        <div class="flex justify-around w-1/2 shrink-0">
+                            <span class="text-2xl sm:text-3xl font-black color-style-3 px-4">✨ ভর্তি চলিতেছে ✨</span>
+                            <span class="text-2xl sm:text-3xl font-black color-style-1 px-4">🔥 ভর্তি চলিতেছে 🔥</span>
+                            <span class="text-2xl sm:text-3xl font-black color-style-2 px-4">⚡ ভর্তি চলিতেছে ⚡</span>
+                        </div>
+                        <div class="flex justify-around w-1/2 shrink-0">
+                            <span class="text-2xl sm:text-3xl font-black color-style-3 px-4">✨ ভর্তি চলিতেছে ✨</span>
+                            <span class="text-2xl sm:text-3xl font-black color-style-1 px-4">🔥 ভর্তি চলিতেছে 🔥</span>
+                            <span class="text-2xl sm:text-3xl font-black color-style-2 px-4">⚡ ভর্তি চলিতেছে ⚡</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+        <!-- ফুটার -->
+        <footer class="bg-slate-950 text-slate-400 text-center py-4 px-3 text-sm font-medium border-t border-slate-800">
+            © ২০২৬ এক্সিলেন্ট কম্পিউটার একাডেমী | সর্বস্বত্ব সংরক্ষিত।
+        </footer>
+    </div>
+
+</body>
+</html>
